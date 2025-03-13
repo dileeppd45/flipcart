@@ -282,6 +282,8 @@ header{
   box-sizing: border-box;
   overflow-y: hidden;
 }
+
+
 #rowOne::-webkit-scrollbar {
   display: none;
 }
