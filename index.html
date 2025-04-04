@@ -70,7 +70,6 @@
       <div id="rowOne"></div>
       <div id="rowTwo" class="adslide">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">      
-          <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
               <img src="/src/assets/ads/ad1.webp" style="width:100%;">
@@ -88,7 +87,6 @@
             </div>            
           </div>
       
-          <!-- Left and right controls -->
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
@@ -97,7 +95,6 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
           </a>
-          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -123,215 +120,454 @@
             { name: "Advertise", img: "/src/assets/advertise.svg" },
             { name: "Download App", img: "/src/assets/download.svg" }
         ];  
-        const menuData = [
-    {
-        title: "Men's Top Wear",
-        subcategories: [
-            "All",
-            "Men's T-Shirts",
-            "Men's Casual Shirts",
-            "Men's Formal Shirts",
-            "Men's Kurtas",
-            "Men's Ethnic Sets",
-            "Men's Blazers",
-            "Men's Raincoat",
-            "Men's Windcheaters",
-            "Men's Suit",
-            "Men's Fabrics"
-        ]
-    },
-    { title: "Men's Bottom Wear",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]
-      },
-    { title: "Women Ethnic",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]
-      },
-    { title: "Men Footwear",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]
-      },
-    { title: "Women Footwear",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]
-      },      
-    { title: "Women Footwear",
-      subcategories: [
-                "All",
-                "Men's T-Shirts",
-                "Men's Casual Shirts",
-                "Men's Formal Shirts",
-                "Men's Kurtas",
-                "Men's Ethnic Sets",
-                "Men's Blazers",
-                "Men's Raincoat",
-                "Men's Windcheaters",
-                "Men's Suit",
-                "Men's Fabrics"
-            ]    
-      },
-    { title: "Watches and Accessories",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]      
-     },
-    { title: "Women Western",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]      
-     },
-    { title: "Bags, Suitcases & Luggage",
-      subcategories: [
-                "All",
-                "Men's T-Shirts",
-                "Men's Casual Shirts",
-                "Men's Formal Shirts",
-                "Men's Kurtas",
-                "Men's Ethnic Sets",
-                "Men's Blazers",
-                "Men's Raincoat",
-                "Men's Windcheaters",
-                "Men's Suit",
-                "Men's Fabrics"
-            ]      
-      },
-    { title: "Kids",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]      
-     },
-    { title: "Essentials",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]      
-     },
-    { title: "Winter",
-      subcategories: [
-              "All",
-              "Men's T-Shirts",
-              "Men's Casual Shirts",
-              "Men's Formal Shirts",
-              "Men's Kurtas",
-              "Men's Ethnic Sets",
-              "Men's Blazers",
-              "Men's Raincoat",
-              "Men's Windcheaters",
-              "Men's Suit",
-              "Men's Fabrics"
-          ]      
-     }
-]; 
-      const row1List = [
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a"},
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" },
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a" },
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" },    
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a"},
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" },
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a" },
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" }, 
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a"},
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" },
-          { name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
-          { name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a" },
-          { name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown" },
-          { name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown" }                           
+      const fashionData = [
+          {id:"a1",title: "Men's Top Wear",
+          subcategories: [
+                  "All",
+                  "Men's T-Shirts",
+                  "Men's Kurtas",
+                  "Men's Ethnic Sets",
+                  "Men's Blazers",
+                  "Men's Raincoat",
+                  "Men's Windcheaters",
+                  "Men's Suit",
+                  "Men's Fabrics"
+              ]
+          },
+          {id:"a2", title: "Men's Bottom Wear",
+            },
+          {id:"a3", title: "Women Ethnic",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },
+          {id:"a4", title: "Men Footwear",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },
+          {id:"a5", title: "Women Footwear",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },      
+          {id:"a6", title: "Women Footwear",
+            subcategories: [
+                      "All",
+                      "Men's T-Shirts",
+                      "Men's Casual Shirts",
+                      "Men's Formal Shirts",
+                      "Men's Kurtas",
+                      "Men's Ethnic Sets",
+                      "Men's Blazers",
+                      "Men's Raincoat",
+                      "Men's Windcheaters",
+                      "Men's Suit",
+                      "Men's Fabrics"
+                  ]    
+            },
+          {id:"a7", title: "Watches and Accessories",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"a8", title: "Women Western",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"a9", title: "Bags, Suitcases & Luggage",
+            subcategories: [
+                      "All",
+                      "Men's T-Shirts",
+                      "Men's Casual Shirts",
+                      "Men's Formal Shirts",
+                      "Men's Kurtas",
+                      "Men's Ethnic Sets",
+                      "Men's Blazers",
+                      "Men's Raincoat",
+                      "Men's Windcheaters",
+                      "Men's Suit",
+                      "Men's Fabrics"
+                  ]      
+            },
+          {id:"a10", title: "Kids",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"a11", title: "Essentials",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"a12", title: "Winter",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          }
+      ]; 
+      const electronicsData = [
+          {id:"b1",title: "Men's Top Wear",
+          subcategories: [
+                  "All",
+                  "Men's T-Shirts",
+                  "Men's Kurtas",
+                  "Men's Ethnic Sets",
+                  "Men's Blazers",
+                  "Men's Raincoat",
+                  "Men's Windcheaters",
+                  "Men's Suit",
+                  "Men's Fabrics"
+              ]
+          },
+          {id:"b2", title: "Men's Bottom Wear",
+            },
+          {id:"b3", title: "Women Ethnic",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },
+          {id:"b4", title: "Men Footwear",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },
+          {id:"b5", title: "Women Footwear",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]
+            },      
+          {id:"b6", title: "Women Footwear",
+            subcategories: [
+                      "All",
+                      "Men's T-Shirts",
+                      "Men's Casual Shirts",
+                      "Men's Formal Shirts",
+                      "Men's Kurtas",
+                      "Men's Ethnic Sets",
+                      "Men's Blazers",
+                      "Men's Raincoat",
+                      "Men's Windcheaters",
+                      "Men's Suit",
+                      "Men's Fabrics"
+                  ]    
+            },
+          {id:"b7", title: "Watches and Accessories",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"b8", title: "Women Western",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"b9", title: "Bags, Suitcases & Luggage",
+            subcategories: [
+                      "All",
+                      "Men's T-Shirts",
+                      "Men's Casual Shirts",
+                      "Men's Formal Shirts",
+                      "Men's Kurtas",
+                      "Men's Ethnic Sets",
+                      "Men's Blazers",
+                      "Men's Raincoat",
+                      "Men's Windcheaters",
+                      "Men's Suit",
+                      "Men's Fabrics"
+                  ]      
+            },
+          {id:"b10", title: "Kids",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"b11", title: "Essentials",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          },
+          {id:"b12", title: "Winter",
+            subcategories: [
+                    "All",
+                    "Men's T-Shirts",
+                    "Men's Casual Shirts",
+                    "Men's Formal Shirts",
+                    "Men's Kurtas",
+                    "Men's Ethnic Sets",
+                    "Men's Blazers",
+                    "Men's Raincoat",
+                    "Men's Windcheaters",
+                    "Men's Suit",
+                    "Men's Fabrics"
+                ]      
+          }
+      ];       
+      const row1List = [       
+          { id:"c1", name: "Kilos", img: "/src/assets/row1/kilos.webp", type:"a" },
+          { id:"c3", name: "Fashion", img: "/src/assets/row1/fashion.webp", type:"dropdown",file:fashionData },
+          { id:"c2", name: "Mobiles", img: "/src/assets/row1/mobiles.webp", type:"a"},
+          { id:"c4", name: "Electronics", img: "/src/assets/row1/electronics.webp", type:"dropdown",file:electronicsData },                                   
+
       ];              
+      function hoverFunction3() {
+            let h =document.getElementById("row1droplevel1c3")
+            let c = document.getElementById("c3")
+            let i = document.getElementById("row1droplevel2c3")
+            i.innerHTML=""
+            console.log("c3")
+              let firstSubcategories = fashionData[0]?.subcategories || [];
+              firstSubcategories.forEach(item=>{
+                  let childdiv2 = document.createElement("div");
+                  childdiv2.style = "width:240px; display:flex; justify-content:space-between;";
+                  let span = document.createElement("span");
+                  span.textContent = item; 
+                  span.style = "min-width:140px;";
+                  childdiv2.appendChild(span);
+                  i.appendChild(childdiv2);
+              }) 
+            h.style="  padding:10px;margin-top:20px; display:flex; flex-direction:column; border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: relative; box-shadow: 0 1px 4px rgba(0, 0, 0, .12); height:;"
+            i.style="  padding:10px;margin-top:20px; display:flex; flex-direction:column; border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: relative; box-shadow: 0 1px 4px rgba(0, 0, 0, .12); height:;"
+            c3.style=" margin-top:330px;display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 122px; height: 150px; position:relative;"
+            
+        }
+        function hoverlevel2(sid){
+          let i = document.getElementById("row1droplevel2c3")
+          i.innerHTML=""
+          let altObject = fashionData.find(item => item.id === sid);
+          let altSubcategories = altObject?.subcategories || [];
+          altSubcategories.forEach(item=>{
+            console.log(sid,"sid")
+                  let childdiv2 = document.createElement("div");
+                  childdiv2.style = "width:240px; display:flex; justify-content:space-between;";
+                  let span = document.createElement("span");
+                  span.textContent = item; 
+                  span.style = "min-width:140px;";
+                  childdiv2.appendChild(span);
+                  i.appendChild(childdiv2);
+              }) 
+            i.style="  padding:10px;margin-top:20px; display:flex; flex-direction:column; border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: relative; box-shadow: 0 1px 4px rgba(0, 0, 0, .12); height:;"
+            c3.style=" margin-top:330px;display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 122px; height: 150px; position:relative;"
+
+        }
+
+        function hoverOutFunction3() {
+          let h =document.getElementById("row1droplevel1c3")
+          let i =document.getElementById("row1droplevel2c3")
+          let c = document.getElementById("c3")
+          h.style="display:none;"
+          i.style="display:none;"
+          c3.style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 122px; height: 150px; position:relative;"
+
+        }
+       
+        function hoverFunction4() {
+            let h =document.getElementById("row1droplevel1c4")
+            h.style="display:block;border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: fixed; box-shadow: 0 1px 4px rgba(0, 0, 0, .12);"
+        }
+
+        function hoverOutFunction4() {
+          let h =document.getElementById("row1droplevel1c4")
+          h.style="display:none;"
+        }
+        function hoverFunction7() {
+            let h =document.getElementById("row1droplevel1c7")
+            h.style="display:block;border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: fixed; box-shadow: 0 1px 4px rgba(0, 0, 0, .12);"
+        }
+
+        function hoverOutFunction8() {
+          let h =document.getElementById("row1droplevel1c8")
+          h.style="display:none;"
+        } 
+        function hoverFunction8() {
+            let h =document.getElementById("row1droplevel1c8")
+            h.style="display:block;border-radius: 8px; background-color: #ffffff; border: 1px solid #f0f0f0; position: fixed; box-shadow: 0 1px 4px rgba(0, 0, 0, .12);"
+        }
+
+        function hoverOutFunction7() {
+          let h =document.getElementById("row1droplevel1c7")
+          h.style="display:none;"
+        } 
+
+        window.onload = function () {
+            let c3 = document.getElementById("c3");
+            c3.addEventListener("mouseover", hoverFunction3);
+            c3.addEventListener("mouseout", hoverOutFunction3);
+            let a1 =document.getElementById("a1");
+            a1.addEventListener("mouseover", hoverlevel2("a1"));
+            let a2 =document.getElementById("a2");
+            a2.addEventListener("mouseover", hoverlevel2("a2"));
+            a2.mouse
+            let a3 =document.getElementById("a3");
+            a3.addEventListener("mouseover", hoverlevel2("a3"));
+            let a4 =document.getElementById("a4");
+            a4.addEventListener("mouseover", hoverlevel2("a4"));
+            let a5 =document.getElementById("a5");
+            a5.addEventListener("mouseover", hoverlevel2("a5"));
+            let a6 =document.getElementById("a6");
+            a6.addEventListener("mouseover", hoverlevel2("a6"));
+            let a7 =document.getElementById("a7");
+            a7.addEventListener("mouseover", hoverlevel2("a7"));
+            let a8 =document.getElementById("a8");
+            a8.addEventListener("mouseover", hoverlevel2("a8"));
+            let c4 = document.getElementById("c4");
+            c4.addEventListener("mouseover", hoverFunction4);
+            c4.addEventListener("mouseout", hoverOutFunction4);
+                      
+        };
+
+       
       const dropdown = document.getElementById("dropdown");
       const searchBox = document.getElementById("searchBox");
       const loginDropdown = document.getElementById("logindropdown");
@@ -399,37 +635,10 @@
               dotDropdown.appendChild(li);
           });
       }
-      const menuContainer = document.querySelector(".menu");
-
-// menuData.forEach(item => {
-//     let listItem = document.createElement("li");
-
-//     if (item.subcategories) {
-//         listItem.classList.add("has-submenu");
-
-//         // Create main menu item
-//         listItem.innerHTML = `<a href="#">${item.title} <span class="submenu-arrow">›</span></a>`;
-
-//         // Create the submenu
-//         let subMenu = document.createElement("ul");
-//         subMenu.classList.add("submenu", "second-level");
-
-//         item.subcategories.forEach(subItem => {
-//             let subListItem = document.createElement("li");
-//             subListItem.innerHTML = `<a href="#">${subItem}</a>`;
-//             subMenu.appendChild(subListItem);
-//         });
-
-//         listItem.appendChild(subMenu);
-//     } else {
-//         listItem.innerHTML = `<a href="#">${item.title}</a>`;
-//     }
-
-//     menuContainer.appendChild(listItem);
-// });
+ 
       function populateRow1(){
         row1List.forEach(item=>{
-          let a; // Declare outside the if-else block
+          let a;
           let div1 =document.createElement("div")
           let img = document.createElement("img")
           img.style="width:64px; height:64px;"
@@ -438,9 +647,7 @@
           div1.appendChild(img)
           let div2 =document.createElement("div")
           div2.className="card-name"
-          let div3 =document.createElement("div")
-          div3.className="carddropdown"
-
+          div3 =document.createElement("div")
           
           if (item.type === "a") {
               a = document.createElement("a");
@@ -452,7 +659,7 @@
               a.appendChild(div1);
               a.appendChild(div2);             
           } else {
-              a = document.createElement("div");
+              a = document.createElement("div")
               let text = document.createElement("span");
               text.textContent = item.name; 
               let img = document.createElement('img');
@@ -463,11 +670,36 @@
               a.className="card" 
               a.appendChild(div1);
               a.appendChild(div2); 
+              let div4 =document.createElement("div");
+              div4.id ="row1droplevel1"+item.id
+              div4.style="display: none;"
+              item.file.forEach(item=>{
+                childdiv =document.createElement("div");
+                childdiv.style="width:240px; display:flex; justify-content:space-between;"
+                span = document.createElement("span");
+                childdiv.id =item.id
+                childdiv.className="row1droplevel1class"
+                span.textContent =item.title
+                span.style="min-width:140px"
+                childdiv.appendChild(span)
+                if (item.subcategories) {
+                  img = document.createElement("img");
+                  img.src ="/src/assets/downdirection.svg"
+                  img.style="rotate: 270deg" 
+                  childdiv.appendChild(img);                  
+                }
+                
+                div4.appendChild(childdiv)
+              })
+              let div5 =document.createElement("div");
+              div5.id="row1droplevel2"+item.id;  
+              div5.style="display:none;"          
+              div3.appendChild(div4)
+              div3.appendChild(div5)
+              div3.style="display:flex; min-width:500px"
               a.appendChild(div3);
+              a.id=item.id
           }
-                   
-          
-          
           rowOne.appendChild(a);    
         });
       }

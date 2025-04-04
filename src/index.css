@@ -269,9 +269,9 @@ header{
 }
 
 #rowOne{
-  top: 75px;
+  top: 76px;
   background-color: #fff;
-  min-height: 126px;
+  height: 140px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -280,12 +280,12 @@ header{
   z-index: 990;
   position: relative;
   box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 
 #rowOne::-webkit-scrollbar {
   display: none;
+  
 }
 #rowTwo{
   margin-top: 80px;
@@ -295,7 +295,6 @@ header{
   align-items: center;
   justify-content: center;
   color: black;
-  z-index: 990;
   position: relative;
   box-sizing: border-box;
   overflow-y: hidden;
@@ -305,13 +304,14 @@ header{
 }
 
 .card{
-  margin: auto;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 122px;
   height: 150px;
+  position: relative;
 }
 .card-name span{
   color: black;
@@ -320,4 +320,16 @@ header{
   transition: transform 0.3s ease-in-out;
   transform: rotate(180deg);
 }
-
+/* #row1droplevel1{
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  position: fixed;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
+} */
+.row1droplevel1class img{
+  display: none;
+}
+.row1droplevel1class:hover img{
+  display: block;
+}
